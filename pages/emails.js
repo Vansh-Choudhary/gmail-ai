@@ -57,23 +57,16 @@ export default function Emails() {
       });
   };
 
-  const handleLogout = () => {
-    // Handle logout logic
-    // For example, clearing cookies or tokens and redirecting to login page
-    document.cookie = 'token=; Max-Age=0; path=/;';
-    router.push('/');
-  };
-
   if (!email) {
-    return <div className="centered-text">Loading...</div>;
+    return <div>Loading...</div>;
   }
 
   if (loading) {
-    return <div className="centered-text">Loading emails...</div>;
+    return <div>Loading emails...</div>;
   }
 
   if (error) {
-    return <div className="centered-text">Error loading emails: {error.message}</div>;
+    return <div>Error loading emails: {error.message}</div>;
   }
 
   return (
@@ -90,7 +83,6 @@ export default function Emails() {
             <h2>{name}</h2>
             <p>{email}</p>
           </div>
-          <button onClick={handleLogout} className="logout-button">Logout</button>
         </div>
         <div className="actions">
           <select
@@ -127,13 +119,6 @@ export default function Emails() {
           padding: 20px;
           font-family: Arial, sans-serif;
           position: relative;
-        }
-        .centered-text {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
-          font-size: 1.5em;
         }
         .loader-container {
           position: fixed;
@@ -189,19 +174,6 @@ export default function Emails() {
           margin: 0;
           color: gray;
         }
-        .logout-button {
-          margin-left: 20px;
-          padding: 8px 12px;
-          background-color: #ff4d4d;
-          color: white;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-          font-size: 16px;
-        }
-        .logout-button:hover {
-          background-color: #e60000;
-        }
         .actions {
           display: flex;
           align-items: center;
@@ -224,8 +196,6 @@ export default function Emails() {
         .email-list {
           display: grid;
           gap: 15px;
-          width: 100%;
-          max-width: 600px;
         }
         .email {
           padding: 15px;
