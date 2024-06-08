@@ -3,7 +3,7 @@ import { getAuthenticatedClient, getEmails, getUserProfile } from '../../lib/goo
 
 export default async function handler(req, res) {
   const { token } = req.cookies;
-  const { limit = 20 } = req.query;
+  const { limit = 30 } = req.query;
 
   if (!token) {
     res.status(401).json({ error: 'Unauthorized' });
