@@ -89,9 +89,9 @@ export default function Emails() {
           <div className="profile-info">
             <h2>{name}</h2>
             <p>{email}</p>
-            <button onClick={handleLogout} className="logout-button">Logout</button>
           </div>
         </div>
+        <button onClick={handleLogout} className="logout-button">Logout</button>
         <div className="actions">
           <select
             value={numEmails}
@@ -183,18 +183,17 @@ export default function Emails() {
           color: gray;
         }
         .logout-button {
-          margin-top: 10px;
+          margin-left: 20px;
           padding: 8px 12px;
-          background-color: #ff4b4b;
+          background-color: #ff4d4d;
           color: white;
           border: none;
           border-radius: 5px;
           cursor: pointer;
           font-size: 16px;
-          transition: background-color 0.3s ease;
         }
         .logout-button:hover {
-          background-color: #e33e3e;
+          background-color: #e60000;
         }
         .actions {
           display: flex;
@@ -255,13 +254,13 @@ export default function Emails() {
           color: purple;
         }
         .marketing {
-          border-color: orange;
+          border-color: orange.
         }
         .marketing .category {
           color: orange;
         }
         .spam {
-          border-color: red;
+          border-color: red.
         }
         .spam .category {
           color: red;
@@ -270,4 +269,3 @@ export default function Emails() {
     </div>
   );
 }
-
