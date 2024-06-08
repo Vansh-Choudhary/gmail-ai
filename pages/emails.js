@@ -58,15 +58,15 @@ export default function Emails() {
   };
 
   if (!email) {
-    return <div>Loading...</div>;
+    return <div className="centered-text">Loading...</div>;
   }
 
   if (loading) {
-    return <div>Loading emails...</div>;
+    return <div className="centered-text">Loading emails...</div>;
   }
 
   if (error) {
-    return <div>Error loading emails: {error.message}</div>;
+    return <div className="centered-text">Error loading emails: {error.message}</div>;
   }
 
   return (
@@ -115,10 +115,22 @@ export default function Emails() {
         )}
       </div>
       <style jsx>{`
+        body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          background-color: #f4f4f9;
+        }
         .container {
           padding: 20px;
           font-family: Arial, sans-serif;
           position: relative;
+        }
+        .centered-text {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          font-size: 1.5em;
         }
         .loader-container {
           position: fixed;
@@ -196,6 +208,8 @@ export default function Emails() {
         .email-list {
           display: grid;
           gap: 15px;
+          width: 100%;
+          max-width: 600px;
         }
         .email {
           padding: 15px;
@@ -203,10 +217,15 @@ export default function Emails() {
           border-radius: 10px;
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
           position: relative;
+          background-color: white;
         }
         .email h2 {
           margin: 0 0 5px;
           font-size: 1.2em;
+        }
+        .email p {
+          margin: 0;
+          color: #555;
         }
         .category {
           position: absolute;
@@ -243,6 +262,19 @@ export default function Emails() {
         }
         .spam .category {
           color: red;
+        }
+        .button {
+          padding: 10px 20px;
+          background-color: #4285F4;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 16px;
+          transition: background-color 0.3s ease;
+        }
+        .button:hover {
+          background-color: #357ae8;
         }
       `}</style>
     </div>
