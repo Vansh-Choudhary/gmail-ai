@@ -91,7 +91,6 @@ export default function Emails() {
             <p>{email}</p>
           </div>
         </div>
-        <button onClick={handleLogout} className="logout-button">Logout</button>
         <div className="actions">
           <select
             value={numEmails}
@@ -107,6 +106,7 @@ export default function Emails() {
           <button onClick={handleClassify} className="classify-button">
             Classify
           </button>
+          <button onClick={handleLogout} className="logout-button">Logout</button>
         </div>
       </header>
       <div className="email-list">
@@ -213,6 +213,9 @@ export default function Emails() {
           border-radius: 5px;
           cursor: pointer;
           font-size: 16px;
+        }
+        .classify-button + .logout-button {
+          margin-left: 10px;
         }
         .email-list {
           display: grid;
