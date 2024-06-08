@@ -1,11 +1,11 @@
-/*
-
+/* Global styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
 }
 
+/* Container styles for centering content */
 .container {
     display: flex;
     justify-content: center;
@@ -14,22 +14,26 @@ body {
     height: 100vh;
 }
 
+/* Profile section styles */
 .profile {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
+/* Profile image styles */
 .profile img {
     border-radius: 50%;
     margin-right: 10px;
 }
 
+/* Email list container styles */
 .email-list {
     width: 100%;
     max-width: 600px;
 }
 
+/* Individual email item styles */
 .email {
     background-color: white;
     border: 1px solid #ddd;
@@ -39,15 +43,18 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Email title styles */
 .email h2 {
     margin: 0 0 10px;
 }
 
+/* Email text styles */
 .email p {
     margin: 0;
     color: #555;
 }
 
+/* Button styles */
 .button {
     padding: 10px 20px;
     background-color: #4285F4;
@@ -59,7 +66,7 @@ body {
     transition: background-color 0.3s ease;
 }
 
+/* Button hover effect */
 .button:hover {
     background-color: #357ae8;
 }
-*/
