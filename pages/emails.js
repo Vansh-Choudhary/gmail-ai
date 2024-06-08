@@ -57,6 +57,13 @@ export default function Emails() {
       });
   };
 
+  const handleLogout = () => {
+    // Handle logout logic
+    // For example, clearing cookies or tokens and redirecting to login page
+    document.cookie = 'token=; Max-Age=0; path=/;';
+    router.push('/');
+  };
+
   if (!email) {
     return <div>Loading...</div>;
   }
@@ -82,6 +89,7 @@ export default function Emails() {
           <div className="profile-info">
             <h2>{name}</h2>
             <p>{email}</p>
+            <button onClick={handleLogout} className="logout-button">Logout</button>
           </div>
         </div>
         <div className="actions">
@@ -174,6 +182,20 @@ export default function Emails() {
           margin: 0;
           color: gray;
         }
+        .logout-button {
+          margin-top: 10px;
+          padding: 8px 12px;
+          background-color: #ff4b4b;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 16px;
+          transition: background-color 0.3s ease;
+        }
+        .logout-button:hover {
+          background-color: #e33e3e;
+        }
         .actions {
           display: flex;
           align-items: center;
@@ -248,3 +270,4 @@ export default function Emails() {
     </div>
   );
 }
+
