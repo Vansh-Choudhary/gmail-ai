@@ -183,7 +183,7 @@ export default function Emails() {
           color: gray;
         }
         .logout-button {
-          margin-left: 20px;
+          margin-left: 2px;
           padding: 8px 12px;
           background-color: #ff4d4d;
           color: white;
