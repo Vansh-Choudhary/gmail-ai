@@ -257,13 +257,13 @@ export default function Emails() {
           color: purple;
         }
         .marketing {
-          border-color: orange.
+          border-color: orange;
         }
         .marketing .category {
           color: orange;
         }
         .spam {
-          border-color: red.
+          border-color: red;
         }
         .spam .category {
           color: red;
