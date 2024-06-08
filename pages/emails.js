@@ -97,7 +97,7 @@ export default function Emails() {
             onChange={(e) => setNumEmails(e.target.value)}
             className="email-select"
           >
-            {[5, 10].map((num) => (
+            {[5, 10, 15, 20, 25].map((num) => (
               <option key={num} value={num}>
                 {num} emails
               </option>
