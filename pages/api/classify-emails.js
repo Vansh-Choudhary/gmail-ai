@@ -8,6 +8,7 @@ export default async function handler(req, res) {
   console.log('Request body:', req.body);
 
   if (!emails || !Array.isArray(emails)) {
+    console.error('Invalid request body:', req.body); // Log the invalid body for debugging
     return res.status(400).json({ error: 'Invalid request body, expected an array of emails.' });
   }
 

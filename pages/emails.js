@@ -39,12 +39,14 @@ export default function Emails() {
 
   const handleClassify = () => {
     setClassifying(true);
+    console.log('Emails to classify:', emails); // Log emails for debugging
+
     fetch('/api/classify-emails', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ emails }),
+      body: JSON.stringify({ emails }), // Send emails as array
     })
       .then((res) => res.json())
       .then((data) => {
