@@ -37,7 +37,7 @@ Follow these steps to clone the repository and run the project locally:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/gmail-ai-email-classifier.git
+git clone https://github.com/vansh-choudhary/gmail-ai-email-classifier.git
 cd gmail-ai-email-classifier
 ```
 
