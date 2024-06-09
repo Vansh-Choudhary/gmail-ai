@@ -1,8 +1,8 @@
-# Gmail AI Email Classifier
+# Gmail AI Classifier
 
 ## Overview
 
-Gmail AI Email Classifier is a web application that allows users to authenticate with their Gmail account, fetch their emails, and classify them into different categories such as Important, Promotional, Social, Marketing, and Spam using an AI model. The application leverages the Google Generative AI model for email classification and the Gmail API for fetching emails.
+Gmail AI Classifier is a web application that allows users to authenticate with their Gmail account, fetch their emails, and classify them into different categories such as Important, Promotional, Social, Marketing, and Spam using an AI model. The application leverages the Google Generative AI model for email classification and the Gmail API for fetching emails.
 
 ## Technologies Used
 
@@ -37,8 +37,8 @@ Follow these steps to clone the repository and run the project locally:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/vansh-choudhary/gmail-ai-email-classifier.git
-cd gmail-ai-email-classifier
+git clone https://github.com/vansh-choudhary/gmail-ai.git
+cd gmail-ai
 ```
 
 ### 2. Install Dependencies
